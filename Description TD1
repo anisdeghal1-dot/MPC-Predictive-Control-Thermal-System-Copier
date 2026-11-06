@@ -1,0 +1,76 @@
+# Model Predictive Control (MPC) of a Thermal System
+
+## Overview
+
+This project focuses on the design, tuning and simulation of a linear Model Predictive Controller (MPC) for a thermal heating and cooling system.
+
+The objective is to regulate the output temperature while considering actuator constraints, measured and unmeasured disturbances, and system nonlinearities.
+
+The controller is designed using MATLAB MPC Designer and validated through Simulink simulations.
+
+## System Description
+
+The studied system represents a thermal heating/cooling installation with ventilation.
+
+- Controlled output: Air temperature (°C)
+- Manipulated variable: Heating/cooling power (kW)
+- Measured disturbance: Ambient temperature (°C)
+- Sampling time: 0.5 seconds
+- Reference temperature: 20 °C
+
+## Methodology
+
+### 1. System Modeling
+- Continuous-time transfer function modeling.
+- Discretization using a Zero-Order Hold (ZOH).
+- State-space representation.
+- Integration of measured disturbances.
+
+### 2. MPC Controller Design
+- Controller development using MATLAB MPC Designer.
+- Selection of prediction and control horizons.
+- Tuning of input, input-rate and output weights.
+- Reference preview analysis.
+
+### 3. Constraints and Disturbance Rejection
+- Manipulated variable constraints.
+- Control rate limitations.
+- Measured and unmeasured disturbance analysis.
+- Evaluation of closed-loop performance.
+
+### 4. Simulink Validation
+- Nominal system simulation.
+- Simulation with disturbances and measurement noise.
+- Analysis of actuator saturation and sensor limitations.
+- Comparison of controller responses.
+
+### 5. Explicit MPC
+- Generation of an explicit MPC controller.
+- Definition of the operating state-space region.
+- Explicit controller generation and simulation.
+- Comparison between implicit and explicit MPC.
+
+## Tools and Technologies
+
+- MATLAB
+- MATLAB MPC Designer
+- Simulink
+- Model Predictive Control (MPC)
+- State-space modeling
+- Discrete-time control systems
+
+## Skills Developed
+
+- Predictive control design and tuning.
+- System modeling and discretization.
+- Constraint handling and disturbance rejection.
+- Simulation-based controller validation.
+- Analysis of nonlinear effects in control systems.
+
+## Academic Context
+
+Master EEA – Université de Perpignan Via Domitia (UPVD)
+
+Course: Discrete-Time Predictive Control
+
+Academic project – TD 1
